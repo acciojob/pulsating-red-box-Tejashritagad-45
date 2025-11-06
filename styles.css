@@ -1,1 +1,25 @@
 /*  your css code here. If applicable */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 100px auto; /* centers horizontally */
+  border-radius: 10px; /* optional for smooth edges */
+  animation: pulse 1s ease-in-out infinite;
+}
+
+/* 🔄 Keyframes for pulsating effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
